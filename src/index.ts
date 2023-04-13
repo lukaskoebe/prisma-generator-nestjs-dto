@@ -9,6 +9,8 @@ import { run } from './generator';
 import type { GeneratorOptions } from '@prisma/generator-helper';
 import type { WriteableFileSpecs, NamingStyle } from './generator/types';
 
+export { run as runGenerator } from './generator';
+
 export const stringToBoolean = (input: string, defaultValue = false) => {
   if (input === 'true') {
     return true;
